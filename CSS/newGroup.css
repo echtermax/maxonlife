@@ -1,0 +1,57 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+	--unread-point: #00ffff;
+}
+
+/* Changes the width of the body also added the background color */
+body {
+	margin: auto;
+	padding: 2vh 5%;
+	background-color: var(--bg-color);
+}
+
+a {
+	text-decoration: none;
+	color: var(--decline-color);
+}
+
+.x {
+	border: none;
+	background-color: transparent;
+	float: right;
+}
+
+#friendlist {
+	border: 1px solid var(--contrast-dark);
+	max-width: 400px;
+	padding: 1%;
+	margin-top: 2%;
+}
+
+.group {
+	border: none;
+	border-bottom: 1px solid var(--contrast-dark);
+	margin: 5%;
+	padding-left: 3%;
+	padding-right: 3%;
+	background-color: transparent;
+	cursor: pointer;
+	width: 84%;
+	color: var(--contrast-dark);
+	text-align: left;
+	font-size: 14px;
+}
+
+.symbol {
+	float: right;
+}
+
+.finish {
+	cursor: pointer;
+	margin-top: 2%;
+}

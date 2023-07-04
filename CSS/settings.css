@@ -1,0 +1,36 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+}
+
+/* Changes the width of the body and every form also added the background color */
+body{
+	margin: auto;
+	width: 50%;
+	padding: 2vh 5%;
+	background-color: var(--bg-color);
+}
+
+/* Resizes the input fields, buttons as well as the labels */
+input, label, button {
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+input[type="checkbox"] {
+	width: 12px;
+}
+
+/* Changes things for displays with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+	/* Makes the body wider than on a bigger screen */
+	body {
+		width: 80%;
+	}
+}

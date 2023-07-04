@@ -1,0 +1,179 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+}
+
+/* Changes the width of the body and every form also added the background color */
+body, form {
+	margin: auto;
+	width: 50%;
+	padding: 2vh 5%;
+	background-color: var(--bg-color);
+}
+
+/* Resizes the input fields, buttons as well as the labels */
+input, label, button {
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+/* Centers the text */
+p {
+	text-align: center;
+}
+
+/* Centers the headlines */
+h1 {
+	text-align: center;
+}
+
+/* Changes the colors of the border around the profile picture upload */
+#file_box {
+	text-align: center;
+	padding: 3%;
+	border: thin solid;
+	border-left-color: rgb(200, 200, 200);
+	border-top-color: rgb(200, 200, 200);
+	border-right-color: rgb(200, 200, 200);
+	border-radius: 100px;
+	cursor: pointer;
+	max-height: 50%;
+	margin-bottom: 15px;
+	background-color: var(--contrast-dark);
+}
+
+/* Makes the upload button for the picture invisable */
+#profile_picture {
+	display: none;
+}
+
+/* Changes the color of the name of the uploaded picture */
+#imageName {
+	color: green;
+}
+
+/* Styles the camera */
+div.camera{
+  margin: 5% 20% 0% 36%;
+  position: relative;
+  width: 100px;
+  height: 100px;
+}
+
+/* Styles the camera */
+div.camera div:nth-child(1){
+  position: absolute;
+  top: -8%;
+  left: 20%;
+  width: 60%;
+  height: 30%;
+  border-radius: 5px;
+}
+
+/* Styles the camera */
+div.camera div:nth-child(2){
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 60%;
+  border-radius: 9px;
+}
+
+/* Styles the camera */
+div.camera div:nth-child(3){
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* Styles the camera */
+div.camera div:nth-child(4){
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+
+/* Styles the camera */
+div.camera div:nth-child(5){
+  position: absolute;
+  top: 10%;
+  left: 80%;
+  width: 7%;
+  height: 7%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+/* Styles the camera */
+div.camera div {
+	background: var(--contrast-light);
+}
+
+/* Changes the color of the submit button */
+button {
+	cursor: pointer;
+	background-color: var(--verify-color);
+	color: var(--contrast-drak);
+	margin-left: 9px;
+	margin-top: 7px;
+}
+
+/* Changes the color of the text to login */
+#new-member {
+	color: var(--contrast-dark);
+}
+
+/* Changes the color of the link */
+a {
+	color: var(--contrast-dark);
+}
+
+/* Changes things for displays with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+	/* Makes the camera look good */
+	#file_box {
+		border-color: transparent;
+		background-color: transparent;
+	}
+
+	/* Makes the camera look good */
+	div.camera div {
+		background-color: var(--contrast-dark);
+	}
+
+	/* Makes the body wider than on a bigger screen */
+	body, form {
+		width: 80%;
+	}
+
+	/* Makes the form not leave space on the sides */
+	form {
+		padding: 0;
+	}
+}
+
+/* Makes the camera look good */
+@media only screen and (max-width: 1150px) {
+	#file_box {
+		border-color: transparent;
+		background-color: transparent;
+	}
+
+	div.camera div {
+		background-color: var(--contrast-dark);
+	}
+}

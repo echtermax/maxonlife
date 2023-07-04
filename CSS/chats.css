@@ -1,0 +1,116 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+	--unread-point: #00ffff;
+}
+
+/* Changes the width of the body also added the background color */
+body {
+	margin: auto;
+	width: 50%;
+	padding: 2vh 5%;
+	background-color: var(--bg-color);
+}
+
+#box {
+	width: 90%;
+	margin-left: 5%;
+	border: 1px solid var(--contrast-dark);
+	padding: 1% 2.5% 2.5% 2.5%;
+	margin-bottom: 2%;
+	max-height: 10vh;
+	overflow: hidden;
+}
+
+h3 {
+	margin: 0;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+}
+
+tr {
+	width: 100%;
+}
+
+td {
+	width: 50%;
+	padding-right: 5%;
+	vertical-align: text-top;
+}
+
+#time {
+	border-left: 3px solid var(--contrast-dark);
+	padding-left: 2%;
+}
+
+.dropbtn {
+	background-color: transparent;
+	color: var(--contrast-dark);
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 2vh;
+	text-align: left;
+}
+
+.line {
+	border-bottom: 1px solid var(--contrast-dark);
+}
+
+.dropbtn:first-child {
+	margin-top: 0.5vh;
+}
+
+.chats-content {
+	display: none;
+}
+
+.show {
+	display: block;
+}
+
+td:first-child {
+	width: 75%;
+}
+
+td:last-child {
+	width: 24.5%;
+}
+
+.newGroup {
+	background-color: transparent;
+	color: var(--contrast-dark);
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	margin-top: 2vh;
+	text-align: right;
+}
+
+.newGroup a {
+	color: var(--contrast-dark);
+}
+
+/* Changes things for displays with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+	/* Makes the body wider than on a bigger screen */
+	body {
+		width: 80%;
+	}
+}

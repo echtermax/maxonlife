@@ -1,0 +1,134 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+}
+
+/* Changes the width of the body and every form also added the background color */
+body, form {
+	margin: auto;
+	width: 50%;
+	padding: 2vh 5%;
+	background-color: var(--bg-color);
+}
+
+/* Resizes the input fields, buttons as well as the labels */
+input, label, button {
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+/* Resizes the Picture and creates an border around it */
+/* Moves picture to the center of the page and makes some space to the top */
+#profile-pic {
+	border: 1px solid var(--contrast-dark);
+	border-radius: 100px;
+	height: 100px;
+	width: 100px;
+	margin-left: calc(50% - 50px);
+	margin-top: 5vh;
+}
+/* Creates some space to the top and center text */
+#box {
+	text-align: center;
+	margin-top: 5vh;
+}
+
+/* Makes the friends username bigger */
+#name {
+	font-size: 150%;
+}
+
+#username {
+	position: relative;
+	display: inline-block;
+}
+
+/* Makes the bubble for the ID and hides it */
+#username #id {
+	visibility: hidden;
+	width: 5vw;
+	background-color: var(--contrast-dark);
+	color: var(--contrast-light);
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px 0px;
+	position: absolute;
+	z-index: 1;
+	top: 150%;
+	left: 50%;
+	margin-left: -2.5vw;
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+/* Makes the bubble hide again */
+#username #id::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent var(--contrast-dark) transparent;
+}
+
+/* Displays the bubble with the ID */
+#username:hover #id {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Styles the Chat button */
+button {
+	border-radius: 50px;
+	margin-top: 5vh;
+	cursor: pointer;
+}
+
+/* Styles the link in the button */
+#chat {
+	color: var(--contrast-dark);
+	text-decoration: none;
+}
+
+/* Borders the bio */
+#bio {
+	border: 1px solid var(--contrast-dark);
+	text-align: center;
+	margin-top: 2vh;
+	width: 75%;
+	margin-left: 15.5%;
+}
+
+/* Changes things for displays with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+	/* Makes the body wider than on a bigger screen */
+	body {
+		width: 80%;
+	}
+
+	/* Changes the position of the username and the ID */
+	#username #id {
+		width: 15vw;
+		margin-left: -7.5vw;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	/* Makes arrow on top invisible */
+	#username #id::after {
+		border-color: transparent;
+	}
+
+	/* Changes distance to Object above */
+	#bio {
+		margin-top: 7vh;
+	}
+}

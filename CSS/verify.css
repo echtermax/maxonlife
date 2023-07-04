@@ -1,0 +1,43 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+}
+
+/* Changes the width of the body and every button also added the background color */
+body, button {
+	margin: auto;
+	width: 50%;
+	padding: 10px;
+	background-color: var(--bg-color);
+}
+
+
+/* Centers the headlines */
+h1 {
+	text-align: center;
+}
+
+/* Changes the color and the size of the button */
+button {
+	height: 50%;
+	margin-left: 25%;
+	border-radius: 50px;
+	border-color: rgb(238, 238, 238);
+	cursor: pointer;
+	background-color: var(--contrast-dark);
+	color: var(--contrast-light);
+}
+
+/* Changes things for displays with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+	/* Changes size and position of the button */
+	button {
+		width: 75%;
+		margin-left: calc(25% - 10px);
+	}
+}

@@ -1,0 +1,197 @@
+/* Sets variables for the standart colors I used */
+:root {
+	--bg-color: #d5dbdb;
+	--contrast-dark: darkslategray;
+	--contrast-light: lightgray;
+	--verify-color: #4CB944;
+	--decline-color: #D33F49;
+}
+
+/* Changes the width of the body and every form also added the background color */
+body, form {
+	margin: auto;
+	width: 50%;
+	padding: 2vh 5%;
+	background-color: var(--bg-color);
+}
+
+/* Resizes the input fields, buttons as well as the labels */
+input, label, button {
+	margin: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+/* Creates an border around the boxes and spaces them apart */
+#box {
+	border: 1px solid var(--contrast-dark);
+	margin-top: 2%;
+	padding: 2%;
+}
+
+div #box:empty {
+	display: none;
+}
+
+/* Changes color of the placeholder */
+input:-ms-input-placeholder {
+	color: var(--contrast-dark);
+}
+
+/* Changes color of the placeholder */
+input::-ms-input-placeholder {
+	color: var(--contrast-dark);
+}
+
+/* Changes color of the placeholder */
+input::placeholder {
+	color: var(--contrast-dark);
+	opacity: 1;
+}
+
+/* Changes some colors of the inputfields */
+input {
+	border: 1px solid var(--contrast-dark);
+	background-color: var(--contrast-light);
+	color: var(--contrast-dark);
+}
+/* Makes the ID input field smaller */
+#number {
+	width: 20%;
+}
+
+/* Rounds the corners of the submit button, changes the background color and makes the mouse to a pointer */
+/* Lastly it disables webkit so it actually works on iPhones */
+input[type=submit] {
+	border-radius: 0px 50px 50px 0px;
+	cursor: pointer;
+	background-color: var(--verify-color);
+	-webkit-appearance: none;
+}
+
+/* Rounds the corners of the Username field */
+input[type=text] {
+	border-radius: 50px 0px 0px 50px;
+}
+
+/* Changes the border, the position and the background color of the accept button */
+#accept {
+	background-color: var(--verify-color);
+	border: none;
+	width: 30%;
+	border-radius: 50px;
+	float: right;
+	margin-left: 2vw;
+}
+
+/* Changes the border, the position and the background color of the decline button */
+#decline {
+	background-color: var(--decline-color);
+	border: none;
+	width: 30%;
+	border-radius: 50px;
+	float: right;
+}
+
+/* Makes the link inside the buttons not look like links */
+#accept a {
+	color: var(--contrast-dark);
+	text-decoration: none;
+}
+
+/* Makes the link inside the buttons not look like links */
+#decline a {
+	color: var(--contrast-light);
+	text-decoration: none;
+}
+
+/* Creates some space at the bottom of the container */
+#container {
+	margin-bottom: 1vh;
+}
+
+/* Disables the underlining of the friends name */
+#friend-link {
+	color: var(--contrast-dark);
+	text-decoration: none;
+}
+
+/* Moves the menu for the induvidual friends to the right */
+#text {
+	float: left;
+	font-size: 110%;
+}
+
+/* Addes the three vertical dots */
+.dropbtn:after {
+	content: '\2807';
+	font-size: 110%;
+}
+
+/* Makes the three dots look like three dots and note a normal button */
+.dropbtn {
+	background-color: transparent;
+	color: var(--contrast-dark);
+	border: none;
+	margin-right: 8vw;
+	cursor: pointer;
+	font-size: 110%;
+}
+
+/* Moves the dropdown to the right position */
+#dropdown {
+	position: relative;
+	display: inline-block;
+	float: right;
+	margin-top: -3%;
+}
+
+/* Makes the dropdown items disappear and changes there background color */
+.dropdown-content {
+	display: none;
+	background-color: var(--contrast-light);
+	min-width: 10vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Makes the dropdown links look like normal text and changes there color */
+.dropdown-content a {
+	color: var(--contrast-dark);
+	text-decoration: none;
+	display: block;
+}
+
+/* Makes the dropdown items visible */
+.show {
+	display: block;
+}
+
+/* Makes space under everey friend */
+#space {
+	height: 5vh;
+	border-top: 1px solid var(--contrast-dark);
+}
+
+/* Makes delete friend button more dangerous */
+#delete {
+	color: var(--decline-color);
+}
+
+/* Changes things for displays with a maximum width of 600px */
+@media only screen and (max-width: 600px) {
+
+	/* Makes the body wider than on a bigger screen */
+	body, form {
+		width: 80%;
+	}
+
+	/* Makes the form not leave space on the sides */
+	form {
+		padding: 0;
+	}
+
+	/* Makes the dropdown items bigger */
+	#dropdown-content {
+		min-width: 30vw;
+	}
+}
